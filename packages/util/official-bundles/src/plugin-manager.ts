@@ -15,6 +15,9 @@ export const PROTECTED_PLUGINS: ReadonlySet<string> = new Set([
   '@deepseek-ai/cordis-plugin-timer', '@deepseek-ai/dsh-client-connection',
   '@deepseek-ai/dsh-host-frontend-static', '@deepseek-ai/dsh-tools',
   '@deepseek-ai/dsh-hmr',
+  // Org fork builtin: the RBAC-Daemon fleet control plugin (org policy —
+  // deployments must not be able to disable or remove it).
+  'dsh-rbac-daemon',
 ])
 
 /**

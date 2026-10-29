@@ -13,6 +13,11 @@
 # driven); the grouping is for readers.
 
 - insert:
+    # RBAC-Daemon fleet control (org fork builtin; see design/fork in the
+    # platform repo). Protected by name in dsh-official-bundles.
+    - id: rbac-daemon
+      name: 'dsh-rbac-daemon'
+
     - id: tool-plugin-manager
       name: '@deepseek-ai/dsh-plugin-manager/tools'
       disabled: true
